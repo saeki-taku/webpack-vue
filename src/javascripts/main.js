@@ -1,5 +1,10 @@
-import my from './my.js';
 import '../stylesheets/style.scss';
 
-console.log('webpack');
-my();
+import Vue from 'vue';
+import VueApp from './VueApp.vue';
+
+new Vue({
+  el: '#vue-root',
+  render: (h) => h(VueApp),
+})
+
